@@ -1,0 +1,20 @@
+{
+  "name": "react-native-modal-select",
+  "version": "1.0.0",
+  "description": "Custom modal select",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduhds/react-native-modal-select.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduhds/react-native-modal-select/issues"
+  },
+  "homepage": "https://github.com/eduhds/react-native-modal-select#readme"
+}
