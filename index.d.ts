@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
-import { PropStyle, ViewStyle, TextStyle } from "react-native";
+import { StyleProp, ViewStyle, TextStyle } from "react-native";
 
 type ItemValue = string | number | any | undefined;
 
-export type ItemData = {
+export type RNModalSelectItem = {
   key: string | number;
   value: ItemValue;
   label: string;
@@ -11,7 +11,7 @@ export type ItemData = {
 };
 
 export type RNModalSelectProps = {
-  data: Array<ItemData>;
+  data: Array<RNModalSelectItem>;
   value: ItemValue;
   placeholder: string;
   onSelect: (value: ItemValue) => void;
@@ -21,16 +21,16 @@ export type RNModalSelectProps = {
   cancelText?: string;
   placeholderTextColor?: string;
   disabled: boolean;
-  containerStyle?: PropStyle<ViewStyle>;
-  inputStyle?: PropStyle<ViewStyle>;
-  modalContainerStyle?: PropStyle<ViewStyle>;
-  titleStyle?: PropStyle<TextStyle>;
-  cancelButtonStyle?: PropStyle<ViewStyle>;
-  cancelTextStyle?: PropStyle<TextStyle>;
-  listContainerStyle: PropStyle<ViewStyle>;
-  itemContainerStyle: PropStyle<ViewStyle>;
-  itemImageStyle: PropStyle<ViewStyle>;
-  itemTextStyle: PropStyle<TextStyle>;
+  containerStyle?: StyleProp<ViewStyle>;
+  inputStyle?: StyleProp<ViewStyle>;
+  modalContainerStyle?: StyleProp<ViewStyle>;
+  titleStyle?: StyleProp<TextStyle>;
+  cancelButtonStyle?: StyleProp<ViewStyle>;
+  cancelTextStyle?: StyleProp<TextStyle>;
+  listContainerStyle: StyleProp<ViewStyle>;
+  itemContainerStyle: StyleProp<ViewStyle>;
+  itemImageStyle: StyleProp<ViewStyle>;
+  itemTextStyle: StyleProp<TextStyle>;
 };
 
 function RNModalSelect(props: RNModalSelectProps): ReactNode;
