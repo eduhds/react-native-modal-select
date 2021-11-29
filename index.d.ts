@@ -16,7 +16,7 @@ export type RNModalSelectProps = {
   placeholder: string;
   onSelect: (value: ItemValue) => void;
   IconRight?: ReactNode;
-  renderComponent: () => ReactNode;
+  renderComponent?: () => ReactNode;
   title?: string;
   cancelText?: string;
   placeholderTextColor?: string;
