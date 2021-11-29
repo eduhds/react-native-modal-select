@@ -20,7 +20,7 @@ export type RNModalSelectProps = {
   title?: string;
   cancelText?: string;
   placeholderTextColor?: string;
-  disabled: boolean;
+  disabled?: boolean;
   containerStyle?: StyleProp<ViewStyle>;
   inputStyle?: StyleProp<ViewStyle>;
   modalContainerStyle?: StyleProp<ViewStyle>;
