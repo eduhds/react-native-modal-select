@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, ReactElement } from "react";
 import { StyleProp, ViewStyle, TextStyle } from "react-native";
 
 type ItemValue = string | number | any | undefined;
@@ -33,6 +33,6 @@ export type RNModalSelectProps = {
   itemTextStyle: StyleProp<TextStyle>;
 };
 
-function RNModalSelect(props: RNModalSelectProps): ReactNode;
+function RNModalSelect(props: RNModalSelectProps): ReactElement;
 
 export default RNModalSelect;
