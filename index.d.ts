@@ -27,10 +27,10 @@ export type RNModalSelectProps = {
   titleStyle?: StyleProp<TextStyle>;
   cancelButtonStyle?: StyleProp<ViewStyle>;
   cancelTextStyle?: StyleProp<TextStyle>;
-  listContainerStyle: StyleProp<ViewStyle>;
-  itemContainerStyle: StyleProp<ViewStyle>;
-  itemImageStyle: StyleProp<ViewStyle>;
-  itemTextStyle: StyleProp<TextStyle>;
+  listContainerStyle?: StyleProp<ViewStyle>;
+  itemContainerStyle?: StyleProp<ViewStyle>;
+  itemImageStyle?: StyleProp<ViewStyle>;
+  itemTextStyle?: StyleProp<TextStyle>;
 };
 
 function RNModalSelect(props: RNModalSelectProps): ReactElement;
