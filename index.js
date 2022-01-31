@@ -33,6 +33,8 @@ function RNModalSelect({
 	itemContainerStyle,
 	itemImageStyle,
 	itemTextStyle,
+	onEndReached,
+	renderFooter,
 }) {
 	const [visible, setVisible] = useState(false);
 
@@ -73,6 +75,10 @@ function RNModalSelect({
 					<FlatList
 						data={data}
 						numColumns={numColumns}
+						keyExtractor={(item, index) => `${item.key}-${index}`}
+						onEndReached={onEndReached}
+						onEndReachedThreshold={0.1}
+						style={[styles.listContainer, listContainerStyle]}
 						renderItem={({ item, index }) => (
 							<TouchableOpacity
 								key={`${item.key}-${index}`}
@@ -97,8 +103,7 @@ function RNModalSelect({
 								)}
 							</TouchableOpacity>
 						)}
-						keyExtractor={(item, index) => `${item.key}-${index}`}
-						style={[styles.listContainer, listContainerStyle]}
+						ListFooterComponent={renderFooter}
 					/>
 
 					<TouchableOpacity

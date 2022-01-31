@@ -33,6 +33,8 @@ export type RNModalSelectProps = {
 	itemContainerStyle?: StyleProp<ViewStyle>;
 	itemImageStyle?: StyleProp<ViewStyle>;
 	itemTextStyle?: StyleProp<TextStyle>;
+	onEndReached?: () => void;
+	renderFooter?: () => ReactNode;
 };
 
 function RNModalSelect(props: RNModalSelectProps): ReactElement;
